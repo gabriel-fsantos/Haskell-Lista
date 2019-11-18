@@ -1,5 +1,5 @@
 potencia :: Int -> Int -> Int
-potencia n m = do
-if m == 1
-then n
-else n * potencia n (m-1)
+potencia a b = do
+ if b == 1
+ then a
+ else a * potencia a (b-1)

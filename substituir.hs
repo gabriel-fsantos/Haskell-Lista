@@ -1,6 +1,6 @@
 substituir :: Int -> Int -> [Int] -> [Int]
-substituir a b [] =  []
-substituir a b (x:y) = do
-if x == a
-then (b: substituir a b y)
-else (x: substituir a b y)
+substituir _ _ [] =  []
+substituir a b (c:d) = do
+ if c == a
+ then (b: substituir a b d)
+ else (c: substituir a b d)
